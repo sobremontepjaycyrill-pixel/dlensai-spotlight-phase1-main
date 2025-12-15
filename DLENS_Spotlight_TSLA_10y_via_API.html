@@ -1,274 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tesla, Inc. (TSLA) — 10-Year Disruptor Spotlight | DLENS v16_1</title>
-<style>
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdfdfc; color: #111; margin: 0; }
-.page { max-width: 880px; margin: 32px auto 48px; padding: 32px 36px 48px; background: #fff; box-shadow: 0 4px 24px #0001; border-radius: 16px; }
-.header { border-bottom: 2px solid #e2e4e8; margin-bottom: 30px; }
-.eyebrow { font-size: 0.95rem; text-transform: uppercase; color: #70b2e7; letter-spacing: 0.09em; font-weight: 700; margin-bottom: 9px; }
-h1 { font-size: 2.1rem; margin: 0 0 12px; letter-spacing: -1px; }
-.meta { display: flex; align-items: center; flex-wrap: wrap; font-size: 1rem; margin-bottom: 13px; color: #6c7a8c; }
-.meta span { margin-right: 22px; }
-.pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
-.pill { background: #e8f3fc; color: #256ca0; border-radius: 26px; padding: 6px 18px; font-size: 1rem; font-weight: 600; letter-spacing: 0.03em; }
-.tview { background: #f7fbfd; border: 1.5px solid #e4e8ec; border-radius: 8px; padding: 12px; margin-bottom: 34px; text-align: center; }
-.tview img { width: 100%; max-width: 710px; height: 280px; object-fit: contain; border-radius: 4px; }
-.section { margin-bottom: 45px; }
-.section h2 { font-size: 1.23rem; letter-spacing: 0.01em; color: #083969; margin: 0 0 15px; }
-.kv { display: grid; grid-template-columns: 185px 1fr; row-gap: 13px; column-gap: 25px; font-size: 1.04em; margin-bottom: 10px; }
-.kv .key { font-weight: 600; color: #4a7199; letter-spacing: 0.02em; }
-.table-wrap { overflow-x: auto; background: #f4f8fb; border-radius: 8px; padding: 10px 14px 7px; margin-bottom: 24px; }
-table { border-collapse: collapse; width: 100%; min-width: 670px; }
-th, td { border: 1px solid #e0e6ef; padding: 8px 9px; text-align: left; font-size: 1.01em; }
-th { background: #e3f0fa; font-weight: 700; color: #285788; }
-td { background: #fafdff; }
-.truth-block { background: #f4fafd; border-radius: 9px; padding: 16px 20px 12px; margin-bottom: 13px; display: flex; flex-wrap: wrap; gap: 13px 20px; align-items: center; min-height: 44px; }
-.truth-pill { padding: 7px 14px; background: #d4ecfb; color: #172634; border-radius: 19px; font-weight: 600; letter-spacing: .02em; font-size: 1.02em; }
-.keyterms { margin: 48px 0 0; border-radius: 10px; background: #f4f4fc; padding: 22px 34px 20px; color: #133457; }
-.keyterms h2 { margin-bottom: 8px; font-size: 1.18em; color: #194189; }
-.keyterms dt { font-weight: 600; margin-top: 7px; }
-.keyterms dd { margin: 0 0 10px 0; }
-ul,li { margin-bottom: 0.6em; }
-@media (max-width:640px) {
-  .page { padding: 10px 4vw 30px; }
-  .meta { flex-direction: column; align-items: flex-start; }
-  .tview img { width: 100%; height: 170px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Tesla (TSLA) — 10 Year DLENS v16_1 Disruptor Spotlight</title>
+  <style>
+    body {
+      background: #f7f9fb;
+      color: #222;
+      font-family: "Inter", "SF Pro Display", "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      margin: 16px auto 40px auto;
+      padding: 32px 24px 48px 24px;
+      max-width: 970px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 16px 0 #dae1e8a8;
+      overflow-x: auto;
+    }
+    .header {
+      margin-bottom: 30px;
+    }
+    .eyebrow {
+      letter-spacing: 0.11em;
+      color: #6187b9;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+    h1 {
+      font-size: 2.19rem;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+      letter-spacing: -0.012em;
+      color: #254368;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 16px;
+      color: #466493;
+      margin-bottom: 8px;
+      gap: 24px;
+    }
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin: 18px 0 5px 0;
+      align-items: center;
+    }
+    .chip {
+      font-size: 13px;
+      border-radius: 16px;
+      background: #f0f4fa;
+      color: #4060a3;
+      border: 1px solid #e3eaf4;
+      padding: 3.4px 13px 3.4px 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+      user-select: text;
+    }
+    .chip.duu { background: #edf6f5; border-color: #b3e0db; color: #137d6c; }
+    .chip.hc { background: #eaf2ea; border-color: #99caab; color: #225d20; }
+    .chip.ddi { background: #efefef; border-color: #b6b6b6; color: #6e456f; }
+    .chip.eco { background: #fffbe7; border-color: #ffe58c; color: #ad8c24; }
+    .chip.xd { background: #f8eeff; border-color: #d2a7e6; color: #983de3; }
+    .chip.frogfree { background: #fcf5f0; border-color: #f7c9b6; color: #c17635; }
+    .chart-block {
+      margin: 20px 3px 22px 0;
+      border-radius: 9px;
+      background: #eaf2f8;
+      padding: 13px 17px 4px 17px;
+      border: 1.5px solid #e3eaf4;
+      box-shadow: 0 1px 4px 0 #e6e9ee;
+    }
+    h2 {
+      font-size: 1.19rem;
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: #365c8d;
+      letter-spacing: 0.01em;
+    }
+    .kv {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 0 18px;
+      margin: 12px 0 0 0;
+    }
+    .kv .key {
+      color: #4163a0;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 5px 0 5px 0;
+      letter-spacing: 0.013em;
+    }
+    .kv div {
+      font-size: 15px;
+      padding: 5px 0 5px 0;
+    }
+    ul, ol {
+      margin: 12px 0 16px 1.4em;
+      padding: 0;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 8px 0 18px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin: 0;
+    }
+    th, td {
+      border: 1px solid #dee6f2;
+      padding: 7px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f6fbfc;
+      color: #4470a0;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .truth-block {
+      background: #f6fafd;
+      border-radius: 8px;
+      border: 1.5px solid #ddeaf5;
+      margin: 11px 0 15px 0;
+      padding: 10.5px 10px 8.5px 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .truth-pill {
+      background: #e8eef7;
+      color: #355289;
+      border-radius: 13px;
+      padding: 5px 13px;
+      margin-right: 3.5px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      user-select: text;
+      border: 1px solid #cad9ed;
+      margin-bottom: 3px;
+    }
+    .truth-pill.green { background: #e3fae5; color: #237055; border-color: #a5eac1; }
+    .truth-pill.yellow { background: #fffbe2; color: #ad9838; border-color: #f0e297; }
+    .truth-pill.red { background: #fae8e8; color: #b13217; border-color: #efb1a4; }
+    .keyterms {
+      background: #f5f7fa;
+      font-size: 15.2px;
+      border: 1.5px solid #e6eef7;
+      border-radius: 9px;
+      padding: 18px 25px 15px 23px;
+      margin-top: 37px;
+      margin-bottom: 16px;
+      color: #294160;
+      font-family: inherit;
+    }
+    .keyterms h2 {
+      font-size: 1.05rem;
+      color: #214975;
+      letter-spacing: 0.01em;
+      margin-bottom: 9px;
+      margin-top: 0;
+    }
+    .keyterms ul {
+      margin: 11px 0 0 1.6em;
+      padding: 0;
+      color: #294160;
+    }
+    .keyterms li { margin-bottom: 4px; }
+    @media (max-width: 600px) {
+      .page { padding: 7vw 3.5vw; }
+      .kv { grid-template-columns: 1fr; }
+      .header .meta { gap: 9px; }
+      .keyterms { padding: 6vw 3vw 4vw 4vw;}
+    }
+  </style>
 </head>
 <body>
 <div class="page">
-<div class="header">
-<div class="eyebrow">DLENS v16_1 Disruptor Spotlight</div>
-<h1>Tesla, Inc. (TSLA) — 10-Year Horizon</h1>
-<div class="meta">
-<span>CSP: $179.23</span>
-<span>As of: 17-May-2024 16:10 EDT</span>
-<span>Market cap: $571B</span>
-<span>Sector: Mobility, Energy, AI/Robotics</span>
-</div>
-<div class="pill-row">
-<div class="pill">DUU: $1100</div>
-<div class="pill">10y Upside: +514%</div>
-<div class="pill">DUU Prob: 58%</div>
-<div class="pill">HC Price: $390</div>
-<div class="pill">DDI: 8.2 / Full</div>
-<div class="pill">Role: Ecosystem Pillar & Builder</div>
-<div class="pill">DUU ECO: Mobility Platform, AI/Physical Infra</div>
-</div>
-<div class="tview">
-<!-- Replace below with TradingView or sample chart img. For this template, using a dummy TradingView chart img -->
-<img src="https://finviz.com/chart.ashx?t=TSLA&ty=c&ta=1&p=d&s=l" alt="TSLA 10y Stock Chart"/>
-</div>
-</div>
-
-<div class="section">
-<h2>1) Short Summary (plain language)</h2>
-<p>
-Tesla is a mobility, energy, and AI/robotics company transforming multiple sectors—primarily through electric vehicles (EVs), battery energy storage, and advanced manufacturing. Its mission is to accelerate the world’s transition to sustainable energy, but the company now operates end-to-end: building cars, software, manufacturing systems, batteries, charging infrastructure, AI autonomy, and robotics.
-</p>
-<p>
-Under the DLENS disruption framework, Tesla is classified as an Ecosystem Pillar with dual roles as disruptor and ecosystem builder. Its Disruption Upside Unit (DUU) centers on how much value can shift from legacy automotive, manual manufacturing, oil, and grid incumbents to tech-led platforms built around sustainable mobility, vertical integration, and AI-driven systems over the next decade. Probability is material but not base-case; the transition is anchored in a major paradigm shift toward electrification, autonomy, and manufacturing-as-software.
-</p>
-</div>
-
-<div class="section">
-<h2>2) Disruption Lens (DUU, HC & DDI)</h2>
-<div class="kv">
-<div><span class="key">CSP (Current Stock Price)</span></div>
-<div>$179.23 (as of 17-May-2024 16:10 EDT)</div>
-<div><span class="key">DUU Score (0–10)</span></div>
-<div>8.6</div>
-<div><span class="key">DUU Price, 10y</span></div>
-<div>$1100</div>
-<div><span class="key">DUU Probability (10y)</span></div>
-<div>58%</div>
-<div><span class="key">High-Confidence (HC) Price, 10y</span></div>
-<div>$390</div>
-<div><span class="key">Disruption Depth Index (DDI)</span></div>
-<div>8.2 / Full Tier (platform + stack control)</div>
-</div>
-<p>
-<b>Translation:</b> The most likely disruptive upside for Tesla (10-year horizon) is $1100, representing ~5.1× CSP (+514%)—anchored in a paradigm where EV share, autonomy, energy storage, and AI robotics shift value from legacy auto and utilities. Odds of full realization are 58%, with a conservative 10y scenario ($390) still above current price. DDI is Full Tier: Tesla drives change both as a dominant operator and infrastructure platform.
-</p>
-</div>
-
-<div class="section">
-<h2>3) Business Snapshot & Paradigm Shift</h2>
-<ul>
-<li><b>Core lines:</b> Electric vehicles (Model 3/Y/S/X, Cybertruck), battery storage (Megapack/Powerwall), solar (Solar Roof), self-driving (FSD), AI and robotics (Dojo, Optimus), energy software and grid integration.</li>
-<li><b>Revenue mix:</b> Majority still from vehicle sales (>80%), but platform and infrastructure revenue—energy storage, charging, software—is growing.</li>
-<li><b>Moat:</b> Vertical integration (manufacturing + supply), proprietary battery and AI stack, global giga-factory footprint, recurring platform revenue (software/energy), brand and scale advantages. Fast-cycle innovation (hardware & software) and data leadership in autonomy.</li>
-<li><b>Paradigm shift:</b> Over the next decade, core value will shift from legacy vehicle sales to integrated sustainable mobility and AI-enabled manufacturing. Margin pools move to automation, platform layers, and sources of networked scale. Tesla leads transition to vehicles-as-platform, grid-scale energy, and robotics-as-a-service, compressing cost structure for incumbents.</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>4) Ecosystem & Positioning (DUU ECO)</h2>
-<p>
-<b>DLENS DUU ECO roles:</b>
-<ul>
-<li><b>Ecosystem Pillar:</b> Critical provider of electrification, energy, and AI infrastructure for personal, logistics, and grid-scale mobility. Foundation for electrified transport and grid.</li>
-<li><b>AI Platform Builder:</b> Advanced software, vision-AI and robotics (Dojo, FSD/Optimus) as next-gen economic rails, not just products.</li>
-<li><b>Positioning:</b> Sits at intersection of automotive, energy, AI/robotics, and manufacturing value chains. Outcompetes on vertical integration, data-driven loops (fleet learning), and capacity to shape industry standards (charging, batteries, autonomy APIs).</li>
-<li><b>DUU ECO Disruptors:</b> Competes both with legacy auto/utility (Toyota, GM, Volkswagen, Duke) and next-gen ecosystem players (BYD, BYD Energy, CATL, Rivian, Waymo, Nvidia). Participates in both disruption and foundation layers—making Tesla essential yet also exposed to rapid commoditization and standards risk as ecosystems evolve.</li>
-</ul>
-</p>
-</div>
-
-<div class="section">
-<h2>5) Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)</h2>
-<div class="kv">
-<div><span class="key">XDLens-E (Execution factors)</span></div>
-<div>7.8 — Requires scaling multiple factories, logistic networks, supply chains, and software services simultaneously. Execution risk includes high R&D spend, supply disruptions (e.g. rare earths, lithium), high fixed cost toggle, and any slip in operational excellence.</div>
-<div><span class="key">XDLens-S (Systemic / external factors)</span></div>
-<div>6.6 — Shaped by government policy (EV and grid incentives, tariffs), consumer adoption speed, energy storage pricing, inflation, and global trade/geopolitical risks. Still partial dependence on regulatory tailwinds and synchronized grid/charging infra rollouts.</div>
-<div><span class="key">Science Dependency (0–10)</span></div>
-<div>3 — Most core technologies (lithium-ion, silicon batteries, BEV platforms, vision AI, robot arms) are in broad commercialization; room remains for step-change but no requirement for "new physics."</div>
-<div><span class="key">Evidence Weight</span></div>
-<div>High — Demonstrated multi-continent scale, high-volume manufacturing, and recurrent innovation cycles. Not a pure science bet.</div>
-<div><span class="key">Mix E/S %</span></div>
-<div>~55% execution, 45% systemic (<i>mix will shift if regulatory regimes or access to input commodities changes materially</i>).</div>
-</div>
-</div>
-
-<div class="section">
-<h2>6) FEP, FVU & Frogfree</h2>
-<ul>
-<li><b>FEP (Forward Expectation Premium):</b> Implied required value CAGR of ~18%/yr (vs. CSP) to justify DUU price, with most value accruing 2028–2033 as platforms mature and energy/AI margins rise.</li>
-<li><b>FVU (Feasible Value Uncertainty):</b> Primary range: $340–$1270 (10y). Wide band due to paradigm/standardization unknowns and rate of software/AI margin realization.</li>
-<li><b>Frogfree %:</b> 77% — Majority of future market share and platform dominance is not pre-allocated to incumbents. Most pathway risk comes from execution and pace of paradigm unlock, not pre-existing legacy claims.</li>
-<li><b>Evidence Weight (EW):</b> High, with robust historical learning curves; benefits from demonstrated giga-scale manufacturing and platform velocity. Counterbalanced by sensitivity to demand and tech shifts.</li>
-<li><b>Extra-Time ROI (ETR):</b> 2.34x — Satisfactory by tech disruptor standards: additional 10y holding period ROI (vs. discounting back to today) is positive, indicating multi-stage embedded value options remain.</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>7) Peer Comparison — STRICT 5-COLUMN TABLE</h2>
-<div class="table-wrap">
-<table>
-<tr>
-<th>Company</th>
-<th>Technology / Approach</th>
-<th>Scale / Market Signal</th>
-<th>Subsidy Dependence</th>
-<th>Relative Positioning</th>
-</tr>
-<tr>
-<td><b>Tesla<br>(TSLA)</b></td>
-<td>Vertical full-stack EVs, giga-scale batteries, vision AI, autonomy, robotics, grid integration</td>
-<td>High global scale; industry leader in EV units, storage deployments, and autonomy miles; platform margins growing</td>
-<td>~Low/Moderate: Early phases benefited from incentives; long-term model viable on cost/performance even w/ declining subsidies</td>
-<td>Ecosystem pillar; highest integration; best real data loop for AV/AI; leading software/energy platform momentum</td>
-</tr>
-<tr>
-<td>BYD Co.<br>(BYDDF)</td>
-<td>Mass-production EV/HEV, advanced batteries (LFP), vertical integration, global expansion</td>
-<td>Largest EV manufacturer by units; accelerating exports; controls battery supply internally</td>
-<td>Moderate/High: Expansion partially supported by PRC policies; pricing sometimes below true cost curve for global reach</td>
-<td>Margin leader in scale, strong cost control, but lagging on AI/AV and software layers</td>
-</tr>
-<tr>
-<td>Rivian<br>(RIVN)</td>
-<td>Premium EV trucks/SUVs, software-updates, focus on adventure/utility demographic</td>
-<td>Low-medium; scaling production, limited operating history, negative margin to date</td>
-<td>High: Substantial up-front support, at-risk if EV incentives wane</td>
-<td>Innovation in design and experience, but platform/network effects not yet proven</td>
-</tr>
-<tr>
-<td>General Motors<br>(GM)</td>
-<td>Transitioning to EVs, legacy ICE/EV hybrid, modular EV platforms, partnerships</td>
-<td>Large legacy auto scale, but EV mix still minority; retooling underway</td>
-<td>Moderate: Material dependence on government incentives to bridge cost gap</td>
-<td>Follower: scale in manufacturing, but weak software, platform, and data flywheel</td>
-</tr>
-<tr>
-<td>Nio<br>(NIO)</td>
-<td>Premium EVs, battery swapping, in-house software, connected platform focus</td>
-<td>Mid/low; strong China presence, limited export</td>
-<td>High: Domestic support crucial for battery infra, R&amp;D, and consumer adoption</td>
-<td>Niche player, technological experimentation, not yet ecosystem-defining</td>
-</tr>
-</table>
-</div>
-</div>
-
-<div class="section">
-<h2>8) Truth Audit (v16)</h2>
-<div class="truth-block">
-<div class="truth-pill">DUU Prob: 58%</div>
-<div class="truth-pill">Utility: 9.0</div>
-<div class="truth-pill">Frogfree: 77%</div>
-<div class="truth-pill">EW: High</div>
-<div class="truth-pill">ETR: 2.34×</div>
-</div>
-<ul>
-<li><b>Effect sizes:</b> Core DUU ($1100) represents full realization of platform and energy margins, ~5.1x CSP. High-confidence ($390, +118%) plausible with no autonomy, slow AI margin uptake.</li>
-<li><b>Key sensitivities:</b> (1) Global EV/energy storage penetration curve, (2) software/AV uptake, (3) cost trajectory for batteries and grid infra, (4) competitive response from incumbents and other platform challengers.</li>
-<li><b>Counter-arguments:</b> (i) EV adoption plateaus at subcritical share, (ii) FSD/AI margins overhyped or commoditized, (iii) platform lead erodes amid price wars, (iv) grid/energy execution more difficult than auto.</li>
-<li><b>DLENS rebuttals:</b> Each counter has partial support in data, but trajectory still supports strong platform uplift; significant optionality in energy/AI, evidence base robust, and DUU not contingent on any single platform monopoly.</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>9) Risks, Subsidy Dependence & Watch-outs</h2>
-<ul>
-<li><b>Core risks:</b> Global EV demand disruption (e.g. consumer sentiment, price compression), regulatory transitions or subsidy rollbacks, cost/scale execution stumbles, delayed delivery of autonomy/AI, geo-supply chain disruptions, and structural margin compression if platforms commoditize quicker than value accrues.</li>
-<li><b>Subsidy Dependence:</b> Currently moderate-low—major battery/EV incentives are sunsetting over next 5 years. Tesla’s cost structure <i>should</i> support long-term DUU case, but pace of paradigm shift is slower if subsidies vanish overnight; also exposed to exogenous tariff/policy shifts.</li>
-<li><b>Key watch-outs:</b> (i) Margins in core auto/energy units (<5% GM signals cost/demand issues), (ii) regulatory/market signals around autonomy and grid, (iii) execution on next-gen platforms (robotics, AI factory), (iv) rate of global charger/energy infra adoption, (v) pricing wars with Chinese/US/EU rivals.</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>10) Decision-Ready Conclusion</h2>
-<p>
-Tesla represents the leading 10-year listed vehicle for those seeking exposure to major disruptive value migration in mobility, energy, and AI/physical infrastructure. Paradigm risk is real—duopoly/commodity endstates are possible—but present evidence favors multi-layer platform upside, anchored by robust execution and platform velocity. Holders should monitor pace of EV adoption, platform margin trends, ex-US regulatory change, and declining subsidy backstops. 
-</p>
-<ul>
-<li><b>Up-rate triggers:</b> Autonomous/AI platform scaling (margin expansion at scale), energy/grid and manufacturing-as-service revenue inflections, new cost breakthroughs, clear regulatory advantage.</li>
-<li><b>Down-rate triggers:</b> Multi-year demand plateau, subscale FSD/AI margins, manufacturing or execution setbacks, regulatory shock/hostile subsidy policy change.</li>
-<li><b>Re-rate conditions:</b> Acceleration or stall in global electrification and grid upgrades; emergence of a paradigm-shifting competitive platform (e.g. new AI/robotics system at scale).</li>
-</ul>
-<b>Stance:</b> Outright long-term outperformer by DLENS v16_1; but warrants continued monitoring of execution and ecosystem risk.
-</div>
-
-<div class="keyterms">
-<h2>Key to Terms (DLENS v16 Spotlight)</h2>
-<dl>
-<dt>DUU (Disruption Upside Unit)</dt>
-<dd>The DLENS-defined fair value if the target disruption paradigm is realized at scale, over the specified term (here: 10 years).</dd>
-<dt>HC Price / High-Confidence Price</dt>
-<dd>The probable value in a more conservative, high-confidence scenario where disruptive outcomes are only partially realized.</dd>
-<dt>CSP (Current Stock Price)</dt>
-<dd>The spot share price at the report’s timestamp, used as a real-time anchor for all metrics.</dd>
-<dt>DUU Score</dt>
-<dd>Disruption potential score (0–10), aggregating paradigm shift, frogfree, utility, and evidence inputs.</dd>
-<dt>DUU Probability</dt>
-<dd>DLENS probability estimate (as %) of the DUU scenario being realized over the target term.</dd>
-<dt>DDI (Disruption Depth Index)</dt>
-<dd>Measures completeness of disruption: from minimal (supplier disintermediation) to Full Tier (platform + ecosystem builder and operator).</dd>
-<dt>FEP (Forward Expectation Premium)</dt>
-<dd>Compound annual growth rate needed to bridge from CSP to DUU over the horizon.</dd>
-<dt>FVU (Feasible Value Uncertainty)</dt>
-<dd>Range of credible 10y terminal values based on current evidence, systemic/execution risk, and paradigm uncertainty.</dd>
-<dt>Frogfree (%)</dt>
-<dd>Portion of future market value not locked-in by incumbents (i.e., open for disruption).</dd>
-<dt>Evidence Weight (EW)</dt>
-<dd>Judgment of the robustness of data supporting the DUU/HC scenarios: High = operational at scale or clear curve evidence.</dd>
-<dt>Extra-Time ROI (ETR)</dt>
-<dd>Ratio of value gain over the last N years of the target window vs. earlier term, signaling whether further hold offers material upside.</dd>
-<dt>XDLens-E</dt>
-<dd>Execution-weighted disruptor risk: internal factors (e.g. scaling, product delivery, supply chain, R&D, margin control).</dd>
-<dt>XDLens-S</dt>
-<dd>Systemic-weighted disruptor risk: external factors (policy, macro, competitive, consumer, supply/geopolitics).</dd>
-<dt>Science Dependency (0–10)</dt>
-<dd>How reliant is upside on future breakthroughs (10=crucial new science, 0=no science risk, all commercialization).</dd>
-<dt>DUU ECO</dt>
-<dd>Disruption lens role (e.g. Ecosystem Pillar, Builder, Platform, Supplier, Challenger) and the specific cross-verticals affected.</dd>
-</dl>
-</div>
+  <div class="header">
+    <div class="eyebrow">DLENS v16_1 Disruptor Spotlight</div>
+    <h1>Tesla, Inc. (TSLA) — 10 Year Horizon</h1>
+    <div class="meta">
+      <div><strong>CSP:</strong> $177.91 <span style="color:#678">[as of 2024-06-05 16:00 ET]</span></div>
+      <div><strong>Sector:</strong> Energy & Mobility, Advanced Manufacturing</div>
+      <div><strong>Term:</strong> 10y (2034)</div>
+    </div>
+    <div class="chip-row">
+      <div class="chip duu">DLENS DUU: Platform-Integrator + Infra Builder</div>
+      <div class="chip hc">High-Confidence Price + DDI</div>
+      <div class="chip eco">DUU ECO: Multi-Paradigm (EV, Battery, AI-Manu, Grid)</div>
+      <div class="chip ddii">DDI: Tier-1 (Multi-sector Anchor)</div>
+      <div class="chip xd">Real-Time Anchored</div>
+      <div class="chip frogfree">Frogfree: 69%</div>
+    </div>
+    <div class="chart-block">
+      <!-- TradingView Widget BEGIN -->
+      <div id="tradingview_e0ae8">
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+          new TradingView.widget(
+            {
+              "width": "100%",
+              "height": 320,
+              "symbol": "NASDAQ:TSLA",
+              "interval": "D",
+              "timezone": "Etc/UTC",
+              "theme": "light",
+              "style": "1",
+              "locale": "en",
+              "toolbar_bg": "#f1f3f6",
+              "hide_side_toolbar": true,
+              "allow_symbol_change": false,
+              "container_id": "tradingview_e0ae8"
+            }
+          );
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </div>
+  </div>
+  <h2>1) Short Summary (plain language)</h2>
+  <p>
+    Tesla is a vertically integrated energy and technology company operating across electric vehicles (EVs), advanced batteries, grid-scale storage, AI-driven automation, and manufacturing platforms. It designs, manufactures, and sells electric vehicles, software-defined energy products, energy storage systems, charging infrastructure, and is actively developing high-automation through full self-driving and robotics. <br /><br />
+    From the DLENS perspective, Tesla occupies a Platform-Integrator and Infrastructure Builder role, driving cross-sector paradigm shifts. DUU focus: widespread electrification of mobility and energy, manufacturing automation, and potential “full-stack” AI-integrated energy solutions. Disruption probability remains high, with strong Tier-1 DDI and multi-paradigm alignment.
+  </p>
+  <h2>2) Disruption Lens (DUU, HC & DDI)</h2>
+  <div class="kv">
+    <div><span class="key">CSP (Current Stock Price)</span></div>
+    <div>$177.91 [as of 2024-06-05 16:00 ET]</div>
+    <div><span class="key">DUU Score (0–10)</span></div>
+    <div>8.3 &mdash; Platform and full-stack disruption in EV, grid, and AI manufacturing</div>
+    <div><span class="key">DUU Price, 10y</span></div>
+    <div>$564 (×3.2 CSP, +217%)</div>
+    <div><span class="key">DUU Probability</span></div>
+    <div>68%</div>
+    <div><span class="key">High-Confidence (HC) Price, 10y</span></div>
+    <div>$321 (×1.8 CSP, +80%)<br />Probability: 50%</div>
+    <div><span class="key">Disruption Depth Index (DDI)</span></div>
+    <div>9.5 / 10 (Tier-1, Structural + Ecosystem Anchor)</div>
+  </div>
+  <p>
+    <b>Translation:</b> On current paradigm trends, Tesla is well-positioned for 3–4× value generation over 10 years, with its DUU and HC scenarios underpinned by strong innovation pace and multi-pronged ecosystem leverage. Peak disruption probability is high; execution risk and deeper competitive pressure are the main caveats.
+  </p>
+  <h2>3) Business Snapshot & Paradigm Shift</h2>
+  <ul>
+    <li><b>Core business lines:</b> Electric vehicles (Model S/3/X/Y, Cybertruck, future affordable models), energy storage (Powerwall, Megapack), solar, charging, software (FSD), and robotics/automation (Optimus).</li>
+    <li><b>Revenue mix:</b> Predominantly automotive (EVs, ~80%), but energy and services (storage, grid, charging, software) rising.</li>
+    <li><b>Moat:</b> Proprietary battery tech, global Gigafactory scale, software-defined fleet, supercharger/energy infra, AI/automation pipeline, brands' network effect.</li>
+    <li><b>Paradigm shift (2034):</b> EV cost/utility parity; grid-interactive storage scaled; manufacturing “AI-first” factories; advanced autonomy at cost scale; new services and platform revenues cannibalizing legacy auto and utilities.</li>
+  </ul>
+  <h2>4) Ecosystem & Positioning (DUU ECO)</h2>
+  <p>
+    <b>DUU ECO roles:</b> Multi-Paradigm Anchor—Tesla serves as both a system-level integrator (combining EV, battery, software/systems, and grid) and an ecosystem builder for AI-manufacturing and distributed energy. <br /><br />
+    <b>Ecosystem relationships:</b> Drives global EV value chain, directly challenges legacy OEMs and oil incumbents, fosters vertical integration (mining through grid), and acts as a capability-multiplier for downstream software and adjacent sectors (e.g., autonomy, AI robotics, distributed energy). Maintains platform vs. component supplier position relative to key disruptors (China automakers, energy giants, new AI entrants).
+  </p>
+  <h2>5) Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)</h2>
+  <div class="kv">
+    <div><span class="key">XDLens-E (Execution factors)</span></div>
+    <div>
+      Execution moderately high risk (6/10): scaling next-gen manufacturing, bringing sub-$25k EVs and humanoid robotics to cost-effective production at scale, global competition, organizational focus drift.
+    </div>
+    <div><span class="key">XDLens-S (Systemic / external factors)</span></div>
+    <div>
+      Market, regulatory and input risk: talent, geopolitical, lithium/supply-chain volatility, unpredictable climate/EV incentive cycles (score 5/10).
+    </div>
+    <div><span class="key">Science Dependency (0–10)</span></div>
+    <div>
+      3.8 &mdash; Based mainly on engineering, scale, and integration risk, not deep new science. Key breakthroughs are incremental in battery, AI, and manufacturing.
+    </div>
+    <div><span class="key">Evidence Weight (EW)</span></div>
+    <div>
+      Strong: high historic scale-up, ecosystem anchoring, proven cost-down curve, with some forward dependency on novel manufacturing and robotics at mass-market cost.
+    </div>
+    <div><span class="key">Mix E/S %</span></div>
+    <div>Execution: ~56% / Systemic: ~44%</div>
+  </div>
+  <h2>6) FEP, FVU &amp; Frogfree</h2>
+  <ul>
+    <li><b>FEP (Value CAGR Needed):</b> ~11.7%/yr (for DUU scenario)</li>
+    <li><b>FVU (Fundamental Value Uncertainty, 10y):</b> ±38% around DUU price</li>
+    <li><b>Frogfree Score:</b> 69% (high, but dependent on sustained innovation and attention to execution risk in new product lines)</li>
+    <li><b>Evidence Weight (EW):</b> High, from multi-year execution and historic cost curve outperformance</li>
+    <li><b>Extra-Time ROI (ETR):</b> ~1.8× vs S&amp;P expected trend; dependent on autonomous full-stack and/or grid-anchoring value capture</li>
+  </ul>
+  <h2>7) Peer Comparison — STRICT 5-COLUMN TABLE</h2>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Technology / Approach</th>
+        <th>Scale / Market Signal</th>
+        <th>Subsidy Dependence</th>
+        <th>Relative Positioning</th>
+      </tr>
+      <tr>
+        <td><b>Tesla (TSLA)</b></td>
+        <td>Fully integrated EV/battery/AI + grid-scale energy</td>
+        <td>Global scale; #1 US EV, major battery/energy install</td>
+        <td>Low to moderate: declining US/EU credits, little op-ex subsidy</td>
+        <td>Paradigm Anchor; ecosystem builder, first-mover</td>
+      </tr>
+      <tr>
+        <td>BYD (BYDDF)</td>
+        <td>Vertically integrated EVs/batteries; hybrid; solar/grid</td>
+        <td>Largest global EV producer; China dominance</td>
+        <td>Moderate: China incentives, local supply chain leverage</td>
+        <td>Peer—leads China, matches on integration but less global platform</td>
+      </tr>
+      <tr>
+        <td>NIO/Xpeng</td>
+        <td>Pure EV; batt. swap; software/platform</td>
+        <td>Mid-scale, rapid China penetration</td>
+        <td>High: significant reliance on China policies and credits</td>
+        <td>Disruptive, but less full-stack/control vs Tesla/BYD</td>
+      </tr>
+      <tr>
+        <td>Rivian</td>
+        <td>US pure-EV, adventure niche, own battery/inf.</td>
+        <td>Limited volume (~60k/year), early growth</td>
+        <td>High: still NPV-negative, reliant on US support + capital</td>
+        <td>Niche disruptor, unproven maturity, lagging scale</td>
+      </tr>
+      <tr>
+        <td>Volkswagen/GM</td>
+        <td>Transitioning legacy, modular EV platforms</td>
+        <td>Global scale, lagging EV penetration, slow ramp</td>
+        <td>Moderate: significant government and R&D subsidies</td>
+        <td>Defensive; struggling to close EV gap</td>
+      </tr>
+      <tr>
+        <td>CATL</td>
+        <td>Battery tech, global scale, third-party supplier</td>
+        <td>Largest battery producer globally</td>
+        <td>Low-moderate; benefits from regional policies</td>
+        <td>Key supplier enabler, less direct DUU leverage</td>
+      </tr>
+    </table>
+  </div>
+  <h2>8) Truth Audit (v16)</h2>
+  <div class="truth-block">
+    <div class="truth-pill green">DUU Probability: 68%</div>
+    <div class="truth-pill">Utility: Platform + Grid Anchor</div>
+    <div class="truth-pill green">Frogfree: 69%</div>
+    <div class="truth-pill">Evidence Weight: High</div>
+    <div class="truth-pill yellow">Extra-Time ROI: 1.8×</div>
+  </div>
+  <ul>
+    <li><b>Effect sizes:</b> 3–4× upside vs CSP in DUU scenario; 80% upside in HC scenario; Frogfree at 69% reflects both observed cost-down and competitive risk.</li>
+    <li><b>Key sensitivities:</b> Cost-down in batteries, China market/competition, execution of FSD and automation, global policy swings.</li>
+    <li><b>Counter-arguments:</b> Incumbent catch-up, consumer demand risk if EV plateau, persistent execution misses, regulatory drag.</li>
+    <li><b>DLENS rebuttal:</b> Evidence of large-scale execution, first-mover infra and multi-paradigm leverage, with only moderate science and policy dependency support high scenario likelihoods.</li>
+  </ul>
+  <h2>9) Risks, Subsidy Dependence &amp; Watch-outs</h2>
+  <ul>
+    <li><b>Core risks:</b> Manufacturing/automation scale-up misses, overextension into new verticals, AI/internal focus drift, price competition eroding margins, loss of China or critical supply chains, escalating regulatory/policy risk.</li>
+    <li><b>Subsidy dependence:</b> Material, but declining over time &mdash; limited on operating margin, exposure to global incentive cycles (esp. EV and storage credits, China/US/EU); HC/DUU scenarios do not depend on increasing subsidy tailwind.</li>
+    <li><b>Watch-outs:</b> Robotics execution, imminent cost curve shifts (battery/raw material), FSD regulatory risk, and new platform launches (new EV or manufacturing cost innovations).</li>
+  </ul>
+  <h2>10) Decision-Ready Conclusion</h2>
+  <p>
+    Tesla remains a central platform-disruptor and infrastructure builder for the next decade’s electrification and manufacturing paradigms, priced at a moderate discount to DUU scenario value with material upside at current CSP. Key up-rate signals: cost-down cycles outpacing peers, autonomous capabilities making decisive market share gains, or energy segment margin expansion. Down-rate: persistent manufacturing/robotics execution shortfalls, irreversible share loss in China, or regulatory exclusion from major markets. Re-rate if disruptive new business lines (e.g., AI manufacturing) scale to meaningfully alter base-case. <br/>
+    <b>Stance:</b> Outperform, but active execution and ecosystem surveillance recommended.
+  </p>
+  <div class="keyterms">
+    <h2>Key to Terms (DLENS v16 Spotlight)</h2>
+    <ul>
+      <li><b>DLENS DUU:</b> Disruptor Utility/Ultimate scenario; most-likely value/pricing for the target company if the paradigm shift thesis fully plays out (vs. status quo or defensive scenarios).</li>
+      <li><b>HC Price:</b> “High-Confidence” price; conservative multi-path scenario with limited dependency on hard execution or new science.</li>
+      <li><b>DDI (Disruption Depth Index):</b> Measures scale/depth of disruption (0-10); Tier-1 = deep/structural, Tier-2 = sectoral/core, Tier-3 = local/niche.</li>
+      <li><b>DUU ECO:</b> Ecosystem paradigm category—how the company interacts with sectoral and cross-sector value chains (Builder, Platform, Anchor, Enabler, etc.).</li>
+      <li><b>XDLens-E/S:</b> Qualitative feasibility screens: E = Executional (internal/organizational); S = Systemic (market, regulatory, inputs); both scored <i>(0–10, low=lower risk)</i>.</li>
+      <li><b>Science Dependency:</b> 0–10 scale: how much the thesis depends on new scientific breakthroughs (vs. execution, engineering, policy or scaling risk).</li>
+      <li><b>FEP (Value CAGR Needed):</b> Compounded annual return required to reach DUU or HC scenario from CSP within the time horizon.</li>
+      <li><b>FVU (Fundamental Value Uncertainty):</b> Range of plausible outcomes around DUU price, expressed as ±%.</li>
+      <li><b>Frogfree:</b> % of scenario value judged “free” of deep paradigm risk—requires no unprecedented leaps (“frog jumps”).</li>
+      <li><b>Evidence Weight (EW):</b> Historic and present empirical evidence backing the scenario.</li>
+      <li><b>Extra-Time ROI (ETR):</b> Expected 10y return multiple over S&amp;P/sector baseline in DUU scenario.</li>
+      <li><b>Real-Time Anchoring:</b> All KPIs, prices and market signals are locked to timestamped CSP as shown in header.</li>
+      <li><b>Subsidy Dependence:</b> The extent to which the scenario (DUU or HC) depends on direct/indirect government support, incentives, or public subsidy; specified in each relevant section.</li>
+    </ul>
+  </div>
 </div>
 </body>
 </html>
