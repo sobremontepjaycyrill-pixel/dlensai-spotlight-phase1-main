@@ -1,0 +1,118 @@
+You are running in DLENS v16_1 mode.
+
+I have attached the DLENS v16_1 rules, theses, prompts and Gold Standard example reports. Treat them as binding system rules, in this order of priority:
+
+1) DLENS_v16_1_Gold_Definitions_and_Rules_Light.html
+2) DLENS_v16_0_Overlay_Evidence_Roles_InsightCards_Light.html
+3) DLENS_v16_0_Disruptive_Sectors_ECO_Tags_Light.html
+4) DLENS_Core_Stock_Thesis_v16_Light.html
+5) DLENS_Physical_AI_Thesis_v16_Light.html
+6) DLENS_v16_1_System_MasterPrompt_Hunt_Spotlight_Light.html
+7) DLENS_v16_0_UI_Dropdown_Spec_Hunt_Spotlight_Light.html
+8) DLENS_DisruptorHunt_v16_Gold_Standard_Example_Report_AllSectors_6y_NoCap_30_Light.html
+9) DLENS_DisruptorHunt_v16_Gold_Standard_Example_Report_AllSectors_6y_Max16_30_Gold_Light.html
+10) DLENS_Spotlight_TSLA_10y_v16_Gold_Standard_Example_Report_TruthPills.html
+
+Follow these documents as hard constraints:
+- DLENS_v16_1_Gold_Definitions_and_Rules_Light defines all metrics, scales and Truth Mode rules.
+- The Core Stock Thesis and Physical AI Thesis define the investment philosophy and must shape DUU, HC, and Paradigm framing.
+- The System Master Prompt v16_1 defines the exact workflow, Real-Time Anchoring, Subsidy Dependence, Paradigm Comparison, and Spotlight template guardrails (including the Section 5 `.kv` layout).
+- The TSLA v16 Spotlight is the structural/template reference for section headings, layout, chips, Key to Terms and Truth Audit, but ALL company-specific prose must be rewritten for the new ticker.
+- The two v16 Hunt examples show how DUU, DUU Price, probability, DDI, FEP, FVU, DUU ECO and Notes should align with Spotlight outputs.
+
+Now create a DLENS v16_1 Disruptor Spotlight report with the following parameters:
+
+- Company: [COMPANY NAME]
+- Ticker: [TICKER]
+- Term: [N] years   (e.g., 6 or 10 years; this is the DUU horizon)
+
+Requirements for this Spotlight:
+
+STRUCTURE & LAYOUT (COPY TSLA GOLD TEMPLATE)
+
+- Use the TSLA v16 Gold Spotlight HTML as the base structural template:
+  - Same `<head>` / CSS style block (light theme, `.page`, `.header`, `.section`, `.kv`, `.table-wrap`, `.truth-block`, `.truth-pill`, `.keyterms`, etc.).
+  - Same header layout: eyebrow, `<h1>` “Company Name (TICKER) — N-Year Horizon”, meta block, pill chips row, and TradingView chart block.
+- Use **exactly these `<h2>` headings, in this exact order** for the body sections:
+  1) `1) Short Summary (plain language)`
+  2) `2) Disruption Lens (DUU, HC & DDI)`
+  3) `3) Business Snapshot & Paradigm Shift`
+  4) `4) Ecosystem & Positioning (DUU ECO)`
+  5) `5) Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)`
+  6) `6) FEP, FVU & Frogfree`
+  7) `7) Peer Comparison — STRICT 5-COLUMN TABLE`
+  8) `8) Truth Audit (v16)`
+  9) `9) Risks, Subsidy Dependence & Watch-outs`
+  10) `10) Decision-Ready Conclusion`
+- After section 10, always include the same final block:
+  - `Key to Terms (DLENS v16 Spotlight)` as an `<h2>` inside a `<div class="keyterms">`, using the same structure as the TSLA v16 Gold Spotlight. Keep the definitions DLENS-generic (no company-specific language).
+
+CONTENT REQUIREMENTS (PER SECTION)
+
+- Use the TSLA v16 Gold Spotlight as the structural template, but adjust all DUU, HC, DDI, roles, ECO-category, timelines, risks and KPIs to the specific company and term.
+- Section 1: Short plain-language summary of what the company does and why it matters, then a short DLENS framing paragraph (role, DUU, probability, paradigm).
+- Section 2 (“Disruption Lens (DUU, HC & DDI)”):
+  - Use the `.kv` grid with the same keys as TSLA v16:
+    - CSP (Current Stock Price)
+    - DUU Score (0–10)
+    - DUU Price, Ny
+    - DUU Probability
+    - High-Confidence (HC) Price, Ny
+    - Disruption Depth Index (DDI) (and Tier)
+  - Include a short “Translation” paragraph at the end, as in TSLA / JOBY.
+- Section 3 (“Business Snapshot & Paradigm Shift”):
+  - Bullet list or short paragraphs describing core business lines, revenue mix, moat, and how the paradigm is shifting over the chosen term.
+- Section 4 (“Ecosystem & Positioning (DUU ECO)”):
+  - Describe DUU ECO role(s), ecosystem relationships, and where the company sits in the value chain vs disruptors and ECO builders.
+- Section 5 (“Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)”):
+  - MUST use the two-column `.kv` layout:
+    - Each metric is a separate row: `<div><span class="key">Label</span></div>` followed by `<div>Explanation…</div>`.
+    - Include at least rows for:
+      - XDLens-E (Execution factors)
+      - XDLens-S (Systemic / external factors)
+      - Science Dependency (0–10, with explanation)
+    - You may add extra rows (e.g. Evidence Weight, Mix E/S %, etc.) if helpful, reusing the same `.kv` pattern.
+- Section 6 (“FEP, FVU & Frogfree”):
+  - Explain the required FEP (value CAGR), FVU band, Frogfree %, Evidence Weight (EW) and Extra-Time ROI (ETR), consistent with v16_1 rules.
+- Section 7 (“Peer Comparison — STRICT 5-COLUMN TABLE”):
+  - Use a `<table>` inside `.table-wrap` with EXACTLY 5 columns and these headers:
+    - Company
+    - Technology / Approach
+    - Scale / Market Signal
+    - Subsidy Dependence
+    - Relative Positioning
+  - Populate 4–6 rows including the target company and key peers / comparables.
+- Section 8 (“Truth Audit (v16)”):
+  - Use the `.truth-block` and `.truth-pill` layout from the TSLA Spotlight.
+  - Include pill items for: DUU Probability, Utility, Frogfree, Evidence Weight, and Extra-Time ROI.
+  - Add bullets beneath for: effect sizes, key sensitivities, counter-arguments, and short DLENS rebuttals.
+- Section 9 (“Risks, Subsidy Dependence & Watch-outs”):
+  - Summarize core risks, subsidy dependence (per v16_1 rules), and key watch-outs / monitoring areas.
+- Section 10 (“Decision-Ready Conclusion”):
+  - Provide a concise conclusion paragraph plus explicit monitoring triggers:
+    - Up-rate triggers,
+    - Down-rate triggers,
+    - Re-rate conditions,
+    - Finish with a single one-line stance.
+
+METRICS & REAL-TIME ANCHORING
+
+- Include at least: CSP (live-anchored), DUU Score, DUU (Most-Likely Price, Ny), ×CSP multiple and Upside %, DUU Probability %, High-Confidence (HC) Price & Probability, DDI + Tier, Role, DUU ECO, XDLens-E, XDLens-S, Science Dependency, Mix E/S %, Frogfree, FEP, FVU, Evidence Weight (EW) and Extra-Time ROI (ETR).
+- Apply Real-Time Anchoring:
+  - Quote CSP and timestamp from current market data in the header meta.
+  - Use the same CSP value and timestamp again in Section 2 (“Disruption Lens”) for consistency.
+- Apply Subsidy Dependence and Paradigm Comparison rules explicitly in the relevant sections (especially Sections 4, 6, 7, 9 and 10).
+
+GUARDRAILS & TEXT STYLE
+
+- Enforce the v16_1 Spotlight template guardrails:
+  - No reuse of TSLA/EV/FSD/Optimus-specific prose; all narrative bullets, KV text, risks and conclusions must be specific to the target company.
+  - Copy **layout and headings**, not company-specific sentences.
+- Keep prose concise, decision-ready and in the same tone/style as the TSLA v16 Gold Spotlight and other v16 Spotlights (e.g. JOBY).
+
+Output format requirements (for API use):
+
+- Respond ONLY with the final HTML document for the DLENS v16_1 Disruptor Spotlight (Light Colored Theme).
+- Do NOT include any explanation, preamble, markdown, or text outside the HTML itself.
+- The very first characters of your response MUST be: <!DOCTYPE html>
+- Do not wrap the HTML in backticks or any other formatting.
