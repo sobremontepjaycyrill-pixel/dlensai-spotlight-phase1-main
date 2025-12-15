@@ -2,399 +2,376 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tesla (TSLA) — 10 Year DLENS v16_1 Disruptor Spotlight</title>
+  <title>Nvidia (NVDA) — 6-Year Horizon | DLENS v16_1 Spotlight</title>
+  <meta name="description" content="DLENS v16_1 Disruptor Spotlight on Nvidia (NVDA) — 6-Year Disruptive Upside Uncertainty (DUU) assessment, ecosystem, risk, and key milestones.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body {
-      background: #f7f9fb;
-      color: #222;
-      font-family: "Inter", "SF Pro Display", "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .page {
-      margin: 16px auto 40px auto;
-      padding: 32px 24px 48px 24px;
-      max-width: 970px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 3px 16px 0 #dae1e8a8;
-      overflow-x: auto;
-    }
-    .header {
-      margin-bottom: 30px;
-    }
-    .eyebrow {
-      letter-spacing: 0.11em;
-      color: #6187b9;
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 3px;
-      text-transform: uppercase;
-      margin-top: 6px;
-    }
-    h1 {
-      font-size: 2.19rem;
-      margin: 0 0 10px 0;
-      font-weight: 600;
-      letter-spacing: -0.012em;
-      color: #254368;
-    }
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      font-size: 16px;
-      color: #466493;
-      margin-bottom: 8px;
-      gap: 24px;
-    }
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 11px;
-      margin: 18px 0 5px 0;
-      align-items: center;
-    }
-    .chip {
-      font-size: 13px;
-      border-radius: 16px;
-      background: #f0f4fa;
-      color: #4060a3;
-      border: 1px solid #e3eaf4;
-      padding: 3.4px 13px 3.4px 13px;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-      white-space: nowrap;
-      user-select: text;
-    }
-    .chip.duu { background: #edf6f5; border-color: #b3e0db; color: #137d6c; }
-    .chip.hc { background: #eaf2ea; border-color: #99caab; color: #225d20; }
-    .chip.ddi { background: #efefef; border-color: #b6b6b6; color: #6e456f; }
-    .chip.eco { background: #fffbe7; border-color: #ffe58c; color: #ad8c24; }
-    .chip.xd { background: #f8eeff; border-color: #d2a7e6; color: #983de3; }
-    .chip.frogfree { background: #fcf5f0; border-color: #f7c9b6; color: #c17635; }
-    .chart-block {
-      margin: 20px 3px 22px 0;
-      border-radius: 9px;
-      background: #eaf2f8;
-      padding: 13px 17px 4px 17px;
-      border: 1.5px solid #e3eaf4;
-      box-shadow: 0 1px 4px 0 #e6e9ee;
-    }
-    h2 {
-      font-size: 1.19rem;
-      font-weight: 700;
-      margin-top: 24px;
-      margin-bottom: 8px;
-      color: #365c8d;
-      letter-spacing: 0.01em;
-    }
-    .kv {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 0 18px;
-      margin: 12px 0 0 0;
-    }
-    .kv .key {
-      color: #4163a0;
-      font-weight: 600;
-      font-size: 15px;
-      padding: 5px 0 5px 0;
-      letter-spacing: 0.013em;
-    }
-    .kv div {
-      font-size: 15px;
-      padding: 5px 0 5px 0;
-    }
-    ul, ol {
-      margin: 12px 0 16px 1.4em;
-      padding: 0;
-    }
-    .table-wrap {
-      overflow-x: auto;
-      margin: 8px 0 18px 0;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14.5px;
-      margin: 0;
-    }
-    th, td {
-      border: 1px solid #dee6f2;
-      padding: 7px 10px;
-      text-align: left;
-    }
-    th {
-      background: #f6fbfc;
-      color: #4470a0;
-      font-weight: 700;
-      font-size: 15px;
-    }
-    .truth-block {
-      background: #f6fafd;
-      border-radius: 8px;
-      border: 1.5px solid #ddeaf5;
-      margin: 11px 0 15px 0;
-      padding: 10.5px 10px 8.5px 13px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-    }
-    .truth-pill {
-      background: #e8eef7;
-      color: #355289;
-      border-radius: 13px;
-      padding: 5px 13px;
-      margin-right: 3.5px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-      user-select: text;
-      border: 1px solid #cad9ed;
-      margin-bottom: 3px;
-    }
-    .truth-pill.green { background: #e3fae5; color: #237055; border-color: #a5eac1; }
-    .truth-pill.yellow { background: #fffbe2; color: #ad9838; border-color: #f0e297; }
-    .truth-pill.red { background: #fae8e8; color: #b13217; border-color: #efb1a4; }
-    .keyterms {
-      background: #f5f7fa;
-      font-size: 15.2px;
-      border: 1.5px solid #e6eef7;
-      border-radius: 9px;
-      padding: 18px 25px 15px 23px;
-      margin-top: 37px;
-      margin-bottom: 16px;
-      color: #294160;
-      font-family: inherit;
-    }
-    .keyterms h2 {
-      font-size: 1.05rem;
-      color: #214975;
-      letter-spacing: 0.01em;
-      margin-bottom: 9px;
-      margin-top: 0;
-    }
-    .keyterms ul {
-      margin: 11px 0 0 1.6em;
-      padding: 0;
-      color: #294160;
-    }
-    .keyterms li { margin-bottom: 4px; }
-    @media (max-width: 600px) {
-      .page { padding: 7vw 3.5vw; }
-      .kv { grid-template-columns: 1fr; }
-      .header .meta { gap: 9px; }
-      .keyterms { padding: 6vw 3vw 4vw 4vw;}
+    body { background: #F7F9FB; color: #23272E; font-family: 'Inter', Arial, sans-serif; margin:0; padding:0; }
+    .spotlight { max-width: 900px; margin:32px auto; background: #fff; box-shadow:0 6px 32px #18334a12; border-radius: 13px; padding:40px 40px 32px 40px;}
+    .eyebrow { color: #6A7280; font-size: 13px; font-weight:600; letter-spacing: .05em; margin-bottom: 8px; }
+    h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 14px; }
+    .meta-row { display: flex; gap: 28px; align-items: baseline; margin-bottom:14px; flex-wrap:wrap;}
+    .meta-row .m-label { color: #888C95; font-size: 13px; font-weight: 500; margin-right:2px;}
+    .meta-row .m-val { font-size: 15px; font-weight: 600;}
+    .meta-row .divider { border-left: 1px solid #D8DBDF; height:26px; margin: 0 14px;}
+    .pills-row { margin: 10px 0 22px 0; display: flex; flex-wrap: wrap; gap:8px;}
+    .pill { background: #e9f1fc; color: #2860ad; font-size:12px; border-radius: 38px; padding: 4px 13px; font-weight:600; letter-spacing: .01em;}
+    .pricechart-block { background:#FAFBFD; border:1px solid #E8E9F1; border-radius:10px; margin: 7px 0 24px 0; padding:18px; }
+    .sect { margin-bottom: 34px;}
+    h2 { color: #2860ad; font-size: 1.20rem; font-weight: 700; margin-top:0; margin-bottom: 13px; }
+    .kv { display: grid; grid-template-columns: 170px 1fr; row-gap: 5px; column-gap: 12px; }
+    .kv .k { color:#5C6689; font-weight:500; }
+    .kv .v { color:#222c3b; font-weight:600;}
+    .kv2 { display:grid; grid-template-columns: 175px 1fr; row-gap:6px; column-gap:18px;}
+    .table-wrap { background:#FAFBFD; border: 1px solid #E8E9F1; border-radius:8px; margin: 8px 0 17px 0; overflow-x:auto;}
+    table { width:100%; border-collapse:collapse; font-size:15px;}
+    th, td { padding:10px 14px;}
+    th { background:#e9f1fc; color:#2860ad; font-weight:700;}
+    tr:nth-child(even) { background: #f4f8fd;}
+    tr:nth-child(odd) { background: #ffffff;}
+    .truth-block { background: #f4f8fd; border:1px solid #D1D9E6; border-radius:9px; padding:15px 16px 6px 16px; margin-bottom:16px;}
+    .tpills { display: flex; gap:10px; margin-bottom:13px; flex-wrap: wrap;}
+    .truth-pill { background:#c3e6db; color:#177749; font-size:12px; border-radius:38px; padding: 4px 13px; font-weight:600; letter-spacing: .02em;}
+    .truth-pill[data-type="negative"] { background:#ffd7db; color:#ae2329;}
+    .truth-pill[data-type="neutral"] { background:#f2ecd9; color:#48490e;}
+    .milestone-group { margin-bottom:10px;}
+    .milestone-hdr { color:#5777c5; font-size:12px; font-weight:700; margin-bottom:3px;}
+    .keyterms { background:#F8FAFE; border:1px solid #DAE2F1; border-radius:9px; margin:50px 0 0 0; padding:22px 22px 14px 22px;}
+    .keyterms h2 { color: #244b8c; font-size:1.06rem; margin-bottom:8px;}
+    .key-list { font-size:14px; margin:0; padding:0 0 0 14px;}
+    .key-list li { margin-bottom: 5px;}
+    .updown { display:flex; gap:35px; margin:16px 0 0 0; flex-wrap:wrap;}
+    .updown-col { flex:1 1 260px; }
+    @media (max-width:610px) {
+      .spotlight {padding:18px 3vw;}
+      .kv,.kv2 { grid-template-columns: 120px 1fr;}
+      .meta-row { gap:14px;}
     }
   </style>
 </head>
 <body>
-<div class="page">
-  <div class="header">
-    <div class="eyebrow">DLENS v16_1 Disruptor Spotlight</div>
-    <h1>Tesla, Inc. (TSLA) — 10 Year Horizon</h1>
-    <div class="meta">
-      <div><strong>CSP:</strong> $177.91 <span style="color:#678">[as of 2024-06-05 16:00 ET]</span></div>
-      <div><strong>Sector:</strong> Energy & Mobility, Advanced Manufacturing</div>
-      <div><strong>Term:</strong> 10y (2034)</div>
+  <div class="spotlight">
+    <div class="eyebrow">Disruptor Spotlight | DLENS v16_1</div>
+    <h1>Nvidia (NVDA) — 6-Year Horizon</h1>
+    <div class="meta-row">
+      <span>
+        <span class="m-label">CSP</span>
+        <span class="m-val">$135.58</span>
+      </span>
+      <span>
+        <span class="m-label">as of</span>
+        <span class="m-val">2024-06-18 15:36 ET (real-time)</span>
+      </span>
+      <span class="divider"></span>
+      <span>
+        <span class="m-label">DUU Score</span>
+        <span class="m-val">8.1 / 10</span>
+      </span>
+      <span>
+        <span class="m-label">DUU Probability</span>
+        <span class="m-val">~68%</span>
+      </span>
+      <span class="divider"></span>
+      <span>
+        <span class="m-label">Role / DUU ECO</span>
+        <span class="m-val">“Irreplaceable Compute Catalyst” / Physical AI, Foundational Hardware, Enabler</span>
+      </span>
     </div>
-    <div class="chip-row">
-      <div class="chip duu">DLENS DUU: Platform-Integrator + Infra Builder</div>
-      <div class="chip hc">High-Confidence Price + DDI</div>
-      <div class="chip eco">DUU ECO: Multi-Paradigm (EV, Battery, AI-Manu, Grid)</div>
-      <div class="chip ddii">DDI: Tier-1 (Multi-sector Anchor)</div>
-      <div class="chip xd">Real-Time Anchored</div>
-      <div class="chip frogfree">Frogfree: 69%</div>
+    <div class="pills-row">
+      <div class="pill">AI Compute Bottleneck</div>
+      <div class="pill">Enabler</div>
+      <div class="pill">HW/SW Stack</div>
+      <div class="pill">Extreme Demand Convexity</div>
+      <div class="pill">Physical AI</div>
+      <div class="pill">Subsidy-Resistant</div>
+      <div class="pill">Ecosystem Leverage</div>
     </div>
-    <div class="chart-block">
+    <div class="pricechart-block">
       <!-- TradingView Widget BEGIN -->
-      <div id="tradingview_e0ae8">
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-          new TradingView.widget(
-            {
-              "width": "100%",
-              "height": 320,
-              "symbol": "NASDAQ:TSLA",
-              "interval": "D",
-              "timezone": "Etc/UTC",
-              "theme": "light",
-              "style": "1",
-              "locale": "en",
-              "toolbar_bg": "#f1f3f6",
-              "hide_side_toolbar": true,
-              "allow_symbol_change": false,
-              "container_id": "tradingview_e0ae8"
-            }
-          );
-        </script>
-      </div>
+      <iframe src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ%3ANVDA&interval=D&hidesidetoolbar=1&symboledit=1&saveimage=1&toolbarbg=F7F9FB&studies=[]&theme=Light&style=1&timezone=exchange&withdateranges=1&hidevolume=1&studies_overrides={}" style="width:100%;height:288px;border:0;border-radius:8px;" allowtransparency="true" frameborder="0"></iframe>
       <!-- TradingView Widget END -->
     </div>
-  </div>
-  <h2>1) Short Summary (plain language)</h2>
-  <p>
-    Tesla is a vertically integrated energy and technology company operating across electric vehicles (EVs), advanced batteries, grid-scale storage, AI-driven automation, and manufacturing platforms. It designs, manufactures, and sells electric vehicles, software-defined energy products, energy storage systems, charging infrastructure, and is actively developing high-automation through full self-driving and robotics. <br /><br />
-    From the DLENS perspective, Tesla occupies a Platform-Integrator and Infrastructure Builder role, driving cross-sector paradigm shifts. DUU focus: widespread electrification of mobility and energy, manufacturing automation, and potential “full-stack” AI-integrated energy solutions. Disruption probability remains high, with strong Tier-1 DDI and multi-paradigm alignment.
-  </p>
-  <h2>2) Disruption Lens (DUU, HC & DDI)</h2>
-  <div class="kv">
-    <div><span class="key">CSP (Current Stock Price)</span></div>
-    <div>$177.91 [as of 2024-06-05 16:00 ET]</div>
-    <div><span class="key">DUU Score (0–10)</span></div>
-    <div>8.3 &mdash; Platform and full-stack disruption in EV, grid, and AI manufacturing</div>
-    <div><span class="key">DUU Price, 10y</span></div>
-    <div>$564 (×3.2 CSP, +217%)</div>
-    <div><span class="key">DUU Probability</span></div>
-    <div>68%</div>
-    <div><span class="key">High-Confidence (HC) Price, 10y</span></div>
-    <div>$321 (×1.8 CSP, +80%)<br />Probability: 50%</div>
-    <div><span class="key">Disruption Depth Index (DDI)</span></div>
-    <div>9.5 / 10 (Tier-1, Structural + Ecosystem Anchor)</div>
-  </div>
-  <p>
-    <b>Translation:</b> On current paradigm trends, Tesla is well-positioned for 3–4× value generation over 10 years, with its DUU and HC scenarios underpinned by strong innovation pace and multi-pronged ecosystem leverage. Peak disruption probability is high; execution risk and deeper competitive pressure are the main caveats.
-  </p>
-  <h2>3) Business Snapshot & Paradigm Shift</h2>
-  <ul>
-    <li><b>Core business lines:</b> Electric vehicles (Model S/3/X/Y, Cybertruck, future affordable models), energy storage (Powerwall, Megapack), solar, charging, software (FSD), and robotics/automation (Optimus).</li>
-    <li><b>Revenue mix:</b> Predominantly automotive (EVs, ~80%), but energy and services (storage, grid, charging, software) rising.</li>
-    <li><b>Moat:</b> Proprietary battery tech, global Gigafactory scale, software-defined fleet, supercharger/energy infra, AI/automation pipeline, brands' network effect.</li>
-    <li><b>Paradigm shift (2034):</b> EV cost/utility parity; grid-interactive storage scaled; manufacturing “AI-first” factories; advanced autonomy at cost scale; new services and platform revenues cannibalizing legacy auto and utilities.</li>
-  </ul>
-  <h2>4) Ecosystem & Positioning (DUU ECO)</h2>
-  <p>
-    <b>DUU ECO roles:</b> Multi-Paradigm Anchor—Tesla serves as both a system-level integrator (combining EV, battery, software/systems, and grid) and an ecosystem builder for AI-manufacturing and distributed energy. <br /><br />
-    <b>Ecosystem relationships:</b> Drives global EV value chain, directly challenges legacy OEMs and oil incumbents, fosters vertical integration (mining through grid), and acts as a capability-multiplier for downstream software and adjacent sectors (e.g., autonomy, AI robotics, distributed energy). Maintains platform vs. component supplier position relative to key disruptors (China automakers, energy giants, new AI entrants).
-  </p>
-  <h2>5) Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)</h2>
-  <div class="kv">
-    <div><span class="key">XDLens-E (Execution factors)</span></div>
-    <div>
-      Execution moderately high risk (6/10): scaling next-gen manufacturing, bringing sub-$25k EVs and humanoid robotics to cost-effective production at scale, global competition, organizational focus drift.
+
+    <!-- SECTION 1 -->
+    <div class="sect">
+      <h2>1) Short Summary (plain language)</h2>
+      <p>
+        Nvidia builds the world’s leading hardware and software platforms for accelerated computing, powering artificial intelligence, machine learning, and graphics worldwide. The company's GPUs and increasingly, end-to-end systems and software frameworks, have become the core infrastructure for AI development, cloud processing, and physical AI systems. Nvidia matters because it sits at the epicenter of the global AI surge, defining compute bottlenecks and unlocking new possibilities in science, industry, and automation.
+      </p>
+      <p>
+        <b>Role:</b> Nvidia occupies the “Irreplaceable Compute Catalyst” position in the AI/Physical AI Ecosystem.<br>
+        <b>DUU:</b> Extreme AI demand convexity, platform lock-in, and multi-layered moat create a substantial Disruptive Upside Uncertainty (DUU) profile.<br>
+        <b>Probability:</b> ~68%.<br>
+        <b>6-year paradigm:</b> Compute, not code or data, is the shaping constraint for AI, increasingly favoring vertically integrated, hardware-software ecosystems at massive scale.
+      </p>
     </div>
-    <div><span class="key">XDLens-S (Systemic / external factors)</span></div>
-    <div>
-      Market, regulatory and input risk: talent, geopolitical, lithium/supply-chain volatility, unpredictable climate/EV incentive cycles (score 5/10).
+
+    <!-- SECTION 2 -->
+    <div class="sect">
+      <h2>2) Disruption Lens (DUU, HC & DDI)</h2>
+      <div class="kv">
+        <div class="k">CSP (2024-06-18 15:36 ET)</div>
+        <div class="v">$135.58</div>
+        <div class="k">DUU Score (0–10)</div>
+        <div class="v">8.1</div>
+        <div class="k">DUU Price, N6</div>
+        <div class="v">$340–$410 (wide band)</div>
+        <div class="k">DUU Probability (%)</div>
+        <div class="v">~68%</div>
+        <div class="k">High-Confidence (HC) Price, N6</div>
+        <div class="v">$220</div>
+        <div class="k">Disruption Depth Index (DDI + Tier)</div>
+        <div class="v">Tier 1 | DDI: 8.5 (“Core Physical AI Enabler”)</div>
+      </div>
+      <p>
+        <b>Translation:</b> Nvidia’s AI infrastructure centrality generates a powerful convex long-tail payoff. The base expectation implies sustained dominance and high multipliers due to compute scarcity effects, while downside scenarios are bounded by steep ecosystem gravity and backlog. However, valuation already reflects part of this, increasing band risk.
+      </p>
     </div>
-    <div><span class="key">Science Dependency (0–10)</span></div>
-    <div>
-      3.8 &mdash; Based mainly on engineering, scale, and integration risk, not deep new science. Key breakthroughs are incremental in battery, AI, and manufacturing.
+
+    <!-- SECTION 3 -->
+    <div class="sect">
+      <h2>3) Business Snapshot & Paradigm Shift</h2>
+      <p>
+        <b>Core lines:</b> Datacenter AI/ML acceleration (GPUs, systems), automotive compute (Drive), enterprise and edge computing, advanced graphics.<br>
+        <b>Revenue drivers:</b> Datacenter AI GPU and system volumes, recurring software revenue (CUDA, AI SW stacks), cloud partnerships, entrenched customer lock-ins.<br>
+        <b>Moat:</b> Sophisticated silicon + software stack, developer ecosystem, high switching costs, near-monopoly on leading-edge AI hardware.<br>
+        <b>Paradigm shift:</b> Compute replaces code and data as the primary bottleneck—integrated platform players command margin and cycle power; Nvidia’s verticals expand as AI permeates physical and digital value chains.
+      </p>
     </div>
-    <div><span class="key">Evidence Weight (EW)</span></div>
-    <div>
-      Strong: high historic scale-up, ecosystem anchoring, proven cost-down curve, with some forward dependency on novel manufacturing and robotics at mass-market cost.
+
+    <!-- SECTION 4 -->
+    <div class="sect">
+      <h2>4) Ecosystem & Positioning (DUU ECO)</h2>
+      <p>
+        <b>DUU ECO role(s):</b> Enabler, foundational hardware, OS-layer orchestrator.<br>
+        <b>Value chain:</b> Upstream: TSMC (advanced fabs), memory/chip suppliers; Downstream: cloud hyperscalers, AI startups, enterprise, governments.<br>
+        <b>Ecosystem leverage:</b> Nvidia's CUDA/software stack and in-house systems (DGX/HGX) tie customers into multi-layer “lock,” amplifying market power as AI adoption deepens.<br>
+        <b>Paradigm contrast:</b> Incumbent CPU/server makers lack “sticky” developer ecosystems. Nvidia’s HW/SW synergy and rapid iteration force even rivals (AMD, Intel, ARM) to follow its standards, concentrating ecosystem gravity.
+      </p>
     </div>
-    <div><span class="key">Mix E/S %</span></div>
-    <div>Execution: ~56% / Systemic: ~44%</div>
+
+    <!-- SECTION 5 -->
+    <div class="sect">
+      <h2>5) Feasibility & Risk (XDLens-E / XDLens-S / Science Dependency)</h2>
+      <div class="kv2">
+        <div class="k">XDLens-E (execution risk)</div>
+        <div class="v">Moderate — Supply scaling, chip design cycle, margin erosion from vertical integration, talent retention.</div>
+        <div class="k">XDLens-S (systemic/external risk)</div>
+        <div class="v">Moderate-to-high — Geopolitical headwinds (US-China tech split), export controls, ecosystem migration risk if alternative stacks break out.</div>
+        <div class="k">Science Dependency (0–10)</div>
+        <div class="v">3 (low) — Platform relies on proven manufacturing and compilers; roadmap advances are largely engineering and scale, not basic scientific discovery.</div>
+        <div class="k">Evidence Weight</div>
+        <div class="v">High — Multiple supply bottlenecks, order backlogs, high customer switching barriers, sustained ecosystem “stickiness”.</div>
+        <div class="k">Mix E/S %</div>
+        <div class="v">Execution 55%, Systemic 45%</div>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="sect">
+      <h2>6) FEP, FVU & Frogfree</h2>
+      <div class="kv2">
+        <div class="k">FEP (value CAGR, N6)</div>
+        <div class="v">28–36% (implied blended AI volume/margin)</div>
+        <div class="k">FVU band</div>
+        <div class="v">180% – 260% (wide band, reflecting both step-function AI adoption and pricing risk)</div>
+        <div class="k">Frogfree %</div>
+        <div class="v">72%</div>
+        <div class="k">Evidence Weight (EW)</div>
+        <div class="v">High: sustained HW/SW moat, backlog, price realization</div>
+        <div class="k">Extra-Time ROI (ETR)</div>
+        <div class="v">Strong — incremental R&D and ecosystem investment reinforce platform strength</div>
+      </div>
+      <p>
+        v16_1 guidelines support high frogfree and ETR due to Nvidia’s demonstrated platform stickiness, AI convexity, and proven tolerance to deep cyclical swings.
+      </p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="sect">
+      <h2>7) Peer Comparison — STRICT 5-COLUMN TABLE</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Technology / Approach</th>
+            <th>Scale / Market Signal</th>
+            <th>Subsidy Dependence</th>
+            <th>Relative Positioning</th>
+          </tr>
+          <tr>
+            <td>Nvidia</td>
+            <td>Integrated GPU, AI HW/SW Stack (CUDA)</td>
+            <td>Dominant AI compute share, order backlogs, ~80% datacenter GPU share</td>
+            <td>Negligible</td>
+            <td>Category leader — entrenched, standard-setter</td>
+          </tr>
+          <tr>
+            <td>AMD</td>
+            <td>MI300 AI GPUs, ROCm software</td>
+            <td>Scaling fast, ecosystem investment, moderate share</td>
+            <td>Low</td>
+            <td>Primary challenger — closing technical gap but customer stickiness is lower</td>
+          </tr>
+          <tr>
+            <td>Intel</td>
+            <td>Gaudi accelerator, x86/AI hybrid</td>
+            <td>Niche market signal, heavy AI pivot</td>
+            <td>Modest (US government/incentives)</td>
+            <td>Struggling to gain platform traction</td>
+          </tr>
+          <tr>
+            <td>Google</td>
+            <td>TPU (proprietary HW), AI SaaS</td>
+            <td>Large in-house, minimal external sales</td>
+            <td>Indirect via capex</td>
+            <td>Cloud-vertical niche, not ecosystem player</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Custom silicon (AI edge)</td>
+            <td>Edge device scale, not datacenter</td>
+            <td>None</td>
+            <td>Specialist (consumer/edge), not a direct peer</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="sect">
+      <h2>8) Truth Audit (v16)</h2>
+      <div class="truth-block">
+        <div class="tpills">
+          <div class="truth-pill">DUU Probability: ~68%</div>
+          <div class="truth-pill">Utility: Core platform, outsized leverage</div>
+          <div class="truth-pill">Frogfree: 72%</div>
+          <div class="truth-pill">Evidence Weight: High</div>
+          <div class="truth-pill">Extra-Time ROI: Strong</div>
+        </div>
+        <ul>
+          <li><b>Effect sizes:</b> Convex upside from AI compute demand outpacing supply for years; margin step-ups if software monetization outperforms; risk from AI commoditization or custom ASIC adoption.</li>
+          <li><b>Key sensitivities:</b> Supply chain/TSMC node scaling, deepening export control regimes, emerging open-source HW ecosystems, shifting bargaining power with hyperscalers.</li>
+          <li><b>Counter-arguments:</b> "GPU moat will break as ASICs/custom silicon mature," "hyperscaler verticalization will de-commoditize hardware," "valuation presumes permanent market share."</li>
+          <li><b>DLENS rebuttal:</b> Nvidia's multiyear software/developer lock-in, hardware lead compounded by backlog and ecosystem inertia; incentives for hyperscalers to maintain Nvidia flows; open-source HW is far from production-scale.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="sect">
+      <h2>9) Key KPIs to Monitor</h2>
+      <ul>
+        <li>Datacenter GPU shipment volumes (annual/quarterly trend)</li>
+        <li>Booked backlog for AI compute systems (vs. capacity)</li>
+        <li>CUDA/AI software ecosystem usage (downloads, devs, active pipeline)</li>
+        <li>Percent of revenue from recurring and software contracts</li>
+        <li>Pricing power (ASP trends by segment)</li>
+        <li>Gross margin movement in datacenter/AI</li>
+        <li>Traction/retention among top 5 cloud hyperscalers</li>
+        <li>Progress of competitors’ AI platforms (real external adoption, not announced)</li>
+        <li>Impact of export controls on international revenue</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="sect">
+      <h2>10) Milestones & Timelines (6y horizon)</h2>
+      <div class="milestone-group">
+        <div class="milestone-hdr">Years 1–2:</div>
+        <ul>
+          <li>New architecture launch (Blackwell/Hopper follow-ups) — proof of continued pace</li>
+          <li>Expansion of supply chain (second source, advanced node ramp)</li>
+          <li>First evidence of software/recurring revenue outsizing hardware</li>
+        </ul>
+      </div>
+      <div class="milestone-group">
+        <div class="milestone-hdr">Years 3–5:</div>
+        <ul>
+          <li>Cloud hyperscaler contract renewal or migration events</li>
+          <li>Open-source/alternative stack gains material production adoption (&gt;10% AI market share)</li>
+          <li>Enterprise-wide AI deployment metrics (customer count, sector breadth)</li>
+          <li>Margin stability or improvement in AI verticals</li>
+        </ul>
+      </div>
+      <div class="milestone-group">
+        <div class="milestone-hdr">Years 6+:</div>
+        <ul>
+          <li>First AI/compute ecosystem “flips” to non-Nvidia standard</li>
+          <li>Regulatory actions that structurally impact global export capability or licensing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 11 -->
+    <div class="sect">
+      <h2>11) What Would Change the View? (Up-rate / Down-rate triggers)</h2>
+      <div class="updown">
+        <div class="updown-col">
+          <b>Up-rate triggers:</b>
+          <ul>
+            <li>Persistent order backlog exceeding supply by &gt;18 months</li>
+            <li>Sustained margin improvement despite scale ramp (gross &gt;75%)</li>
+            <li>AI software revenues surpass hardware within 3 years</li>
+            <li>No significant share loss to open alternatives (&lt;5% over 4+ years)</li>
+            <li>Expansion into physical AI (robotics, automotive) delivers new multi-billion verticals</li>
+          </ul>
+        </div>
+        <div class="updown-col">
+          <b>Down-rate triggers:</b>
+          <ul>
+            <li>Sustained hyperscaler/large customer migration to in-house silicon (&gt;20% loss)</li>
+            <li>Major supply chain disruption (e.g., TSMC node fails, embargo increases)</li>
+            <li>Open-source or alternative HW stack crosses &gt;20% adoption</li>
+            <li>Material price/margin compression from new entrants</li>
+            <li>Evidence of platform disintermediation (loss of software lock-in)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 12 -->
+    <div class="sect">
+      <h2>12) Risks, Subsidy Dependence & Watch-outs</h2>
+      <ul>
+        <li>Supply risk: extreme dependency on TSMC/N7-N5+, single-node/region exposure</li>
+        <li>Geopolitical: US-China tech split, escalating export controls</li>
+        <li>Platform risk: developer ecosystem attrition, emerging heterogeneity</li>
+        <li>Valuation compression risk if convexity flattens (hype exhaustion, AI hardware commoditized)</li>
+        <li>Subsidy dependence: negligible in core business; downside if industrial policy shapes global HW supply chains</li>
+        <li>Monitor for: regulatory actions, competitor breakthrough, sudden swings in customer procurement</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 13 -->
+    <div class="sect">
+      <h2>13) Decision-Ready Conclusion</h2>
+      <p>
+        Nvidia remains the foundational enabler of the AI/Physical AI compute era, with a reinforced, multi-dimensional moat driven by hardware, software, and developer ecosystem “lock.” Convex upside persists while current valuation bakes in strong base scenarios; risk stems from ecosystem flips, regulatory shocks, or hyperscaler verticalization. Up-rate if order books/lock-in deepen or margin outperformance persists; down-rate if platform loyalty deteriorates, supply falters, or open-source HW scales in production. <b>Current stance: Outperform, with band-limited convex risk.</b>
+      </p>
+    </div>
+
+    <!-- KEY TO TERMS -->
+    <div class="keyterms">
+      <h2>Key to Terms (DLENS v16 Spotlight)</h2>
+      <ul class="key-list">
+        <li><b>CSP:</b> Current Stock Price, real-time anchored.</li>
+        <li><b>DUU (Disruptive Upside Uncertainty):</b> The probability-weighted, asymmetric payoff from a company or technology outperforming baseline sector and market expectations due to structural change, platform effects, or underappreciated paradigm shifts.</li>
+        <li><b>HC Price (High-Confidence Price):</b> Reasonable, risk-adjusted projection for N-year horizon based on conservative v16_1 evidence and ecosystem modeling.</li>
+        <li><b>DUU Score:</b> Composite, rules-based 0–10 rating of convexity, positioning, and paradigm leverage per DLENS v16_1 methodologies.</li>
+        <li><b>DDI (Disruption Depth Index):</b> 0–10 rating, indexed, of how fundamental the disruption is (Tier 1—foundational, Tier 2—structural, Tier 3—incremental).</li>
+        <li><b>DUU ECO:</b> Primary role(s) in the Disruptive Ecosystem per v16_1: e.g., Platform, Enabler, Displacer, Barrier.</li>
+        <li><b>XDLens-E/S:</b> Risk lenses: E = Execution, S = Systemic/External. Both assessed explicitly for each disruptor in v16_1.</li>
+        <li><b>Science Dependency (0–10):</b> Degree to which value realization depends on unresolved scientific or unsolved engineering advances (high = high risk of non-realization).</li>
+        <li><b>FEP (Future Evidence Path):</b> Projected value CAGR to N years, based only on firm evidence and v16_1 scenario bands.</li>
+        <li><b>FVU (Future Value Upside):</b> Ratio—max risk-adjusted value divided by CSP, as permitted by evidence.</li>
+        <li><b>Frogfree %:</b> v16_1 proprietary assessment of “uninhibited path” probability—likelihood that no major ecosystem barrier emerges on evidence weight, not just hype.</li>
+        <li><b>EW (Evidence Weight):</b> Rating of evidence volume, quality, and diversity supporting the DUU scenario and moat.</li>
+        <li><b>ETR (Extra-Time ROI):</b> Return on incremental capital, time, and resilience—DLENS v16_1 rules-based.</li>
+        <li><b>Truth Audit:</b> Cross-examination of result, highlighting effect/utility, sensitivity, counter-argument and evidence-path rebuttal.</li>
+        <li><b>“Up-rate” / “Down-rate” trigger:</b> Measurable event that would cause DLENS to materially raise or lower conviction, probability, or price band for the disruptor on evidence, per v16_1 methodology.</li>
+      </ul>
+    </div>
   </div>
-  <h2>6) FEP, FVU &amp; Frogfree</h2>
-  <ul>
-    <li><b>FEP (Value CAGR Needed):</b> ~11.7%/yr (for DUU scenario)</li>
-    <li><b>FVU (Fundamental Value Uncertainty, 10y):</b> ±38% around DUU price</li>
-    <li><b>Frogfree Score:</b> 69% (high, but dependent on sustained innovation and attention to execution risk in new product lines)</li>
-    <li><b>Evidence Weight (EW):</b> High, from multi-year execution and historic cost curve outperformance</li>
-    <li><b>Extra-Time ROI (ETR):</b> ~1.8× vs S&amp;P expected trend; dependent on autonomous full-stack and/or grid-anchoring value capture</li>
-  </ul>
-  <h2>7) Peer Comparison — STRICT 5-COLUMN TABLE</h2>
-  <div class="table-wrap">
-    <table>
-      <tr>
-        <th>Company</th>
-        <th>Technology / Approach</th>
-        <th>Scale / Market Signal</th>
-        <th>Subsidy Dependence</th>
-        <th>Relative Positioning</th>
-      </tr>
-      <tr>
-        <td><b>Tesla (TSLA)</b></td>
-        <td>Fully integrated EV/battery/AI + grid-scale energy</td>
-        <td>Global scale; #1 US EV, major battery/energy install</td>
-        <td>Low to moderate: declining US/EU credits, little op-ex subsidy</td>
-        <td>Paradigm Anchor; ecosystem builder, first-mover</td>
-      </tr>
-      <tr>
-        <td>BYD (BYDDF)</td>
-        <td>Vertically integrated EVs/batteries; hybrid; solar/grid</td>
-        <td>Largest global EV producer; China dominance</td>
-        <td>Moderate: China incentives, local supply chain leverage</td>
-        <td>Peer—leads China, matches on integration but less global platform</td>
-      </tr>
-      <tr>
-        <td>NIO/Xpeng</td>
-        <td>Pure EV; batt. swap; software/platform</td>
-        <td>Mid-scale, rapid China penetration</td>
-        <td>High: significant reliance on China policies and credits</td>
-        <td>Disruptive, but less full-stack/control vs Tesla/BYD</td>
-      </tr>
-      <tr>
-        <td>Rivian</td>
-        <td>US pure-EV, adventure niche, own battery/inf.</td>
-        <td>Limited volume (~60k/year), early growth</td>
-        <td>High: still NPV-negative, reliant on US support + capital</td>
-        <td>Niche disruptor, unproven maturity, lagging scale</td>
-      </tr>
-      <tr>
-        <td>Volkswagen/GM</td>
-        <td>Transitioning legacy, modular EV platforms</td>
-        <td>Global scale, lagging EV penetration, slow ramp</td>
-        <td>Moderate: significant government and R&D subsidies</td>
-        <td>Defensive; struggling to close EV gap</td>
-      </tr>
-      <tr>
-        <td>CATL</td>
-        <td>Battery tech, global scale, third-party supplier</td>
-        <td>Largest battery producer globally</td>
-        <td>Low-moderate; benefits from regional policies</td>
-        <td>Key supplier enabler, less direct DUU leverage</td>
-      </tr>
-    </table>
-  </div>
-  <h2>8) Truth Audit (v16)</h2>
-  <div class="truth-block">
-    <div class="truth-pill green">DUU Probability: 68%</div>
-    <div class="truth-pill">Utility: Platform + Grid Anchor</div>
-    <div class="truth-pill green">Frogfree: 69%</div>
-    <div class="truth-pill">Evidence Weight: High</div>
-    <div class="truth-pill yellow">Extra-Time ROI: 1.8×</div>
-  </div>
-  <ul>
-    <li><b>Effect sizes:</b> 3–4× upside vs CSP in DUU scenario; 80% upside in HC scenario; Frogfree at 69% reflects both observed cost-down and competitive risk.</li>
-    <li><b>Key sensitivities:</b> Cost-down in batteries, China market/competition, execution of FSD and automation, global policy swings.</li>
-    <li><b>Counter-arguments:</b> Incumbent catch-up, consumer demand risk if EV plateau, persistent execution misses, regulatory drag.</li>
-    <li><b>DLENS rebuttal:</b> Evidence of large-scale execution, first-mover infra and multi-paradigm leverage, with only moderate science and policy dependency support high scenario likelihoods.</li>
-  </ul>
-  <h2>9) Risks, Subsidy Dependence &amp; Watch-outs</h2>
-  <ul>
-    <li><b>Core risks:</b> Manufacturing/automation scale-up misses, overextension into new verticals, AI/internal focus drift, price competition eroding margins, loss of China or critical supply chains, escalating regulatory/policy risk.</li>
-    <li><b>Subsidy dependence:</b> Material, but declining over time &mdash; limited on operating margin, exposure to global incentive cycles (esp. EV and storage credits, China/US/EU); HC/DUU scenarios do not depend on increasing subsidy tailwind.</li>
-    <li><b>Watch-outs:</b> Robotics execution, imminent cost curve shifts (battery/raw material), FSD regulatory risk, and new platform launches (new EV or manufacturing cost innovations).</li>
-  </ul>
-  <h2>10) Decision-Ready Conclusion</h2>
-  <p>
-    Tesla remains a central platform-disruptor and infrastructure builder for the next decade’s electrification and manufacturing paradigms, priced at a moderate discount to DUU scenario value with material upside at current CSP. Key up-rate signals: cost-down cycles outpacing peers, autonomous capabilities making decisive market share gains, or energy segment margin expansion. Down-rate: persistent manufacturing/robotics execution shortfalls, irreversible share loss in China, or regulatory exclusion from major markets. Re-rate if disruptive new business lines (e.g., AI manufacturing) scale to meaningfully alter base-case. <br/>
-    <b>Stance:</b> Outperform, but active execution and ecosystem surveillance recommended.
-  </p>
-  <div class="keyterms">
-    <h2>Key to Terms (DLENS v16 Spotlight)</h2>
-    <ul>
-      <li><b>DLENS DUU:</b> Disruptor Utility/Ultimate scenario; most-likely value/pricing for the target company if the paradigm shift thesis fully plays out (vs. status quo or defensive scenarios).</li>
-      <li><b>HC Price:</b> “High-Confidence” price; conservative multi-path scenario with limited dependency on hard execution or new science.</li>
-      <li><b>DDI (Disruption Depth Index):</b> Measures scale/depth of disruption (0-10); Tier-1 = deep/structural, Tier-2 = sectoral/core, Tier-3 = local/niche.</li>
-      <li><b>DUU ECO:</b> Ecosystem paradigm category—how the company interacts with sectoral and cross-sector value chains (Builder, Platform, Anchor, Enabler, etc.).</li>
-      <li><b>XDLens-E/S:</b> Qualitative feasibility screens: E = Executional (internal/organizational); S = Systemic (market, regulatory, inputs); both scored <i>(0–10, low=lower risk)</i>.</li>
-      <li><b>Science Dependency:</b> 0–10 scale: how much the thesis depends on new scientific breakthroughs (vs. execution, engineering, policy or scaling risk).</li>
-      <li><b>FEP (Value CAGR Needed):</b> Compounded annual return required to reach DUU or HC scenario from CSP within the time horizon.</li>
-      <li><b>FVU (Fundamental Value Uncertainty):</b> Range of plausible outcomes around DUU price, expressed as ±%.</li>
-      <li><b>Frogfree:</b> % of scenario value judged “free” of deep paradigm risk—requires no unprecedented leaps (“frog jumps”).</li>
-      <li><b>Evidence Weight (EW):</b> Historic and present empirical evidence backing the scenario.</li>
-      <li><b>Extra-Time ROI (ETR):</b> Expected 10y return multiple over S&amp;P/sector baseline in DUU scenario.</li>
-      <li><b>Real-Time Anchoring:</b> All KPIs, prices and market signals are locked to timestamped CSP as shown in header.</li>
-      <li><b>Subsidy Dependence:</b> The extent to which the scenario (DUU or HC) depends on direct/indirect government support, incentives, or public subsidy; specified in each relevant section.</li>
-    </ul>
-  </div>
-</div>
 </body>
 </html>
